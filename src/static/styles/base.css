@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Rammetto';
-    src: url('fonts/RammettoOne-Regular.woff2') format('woff2'),
-        url('fonts/RammettoOne-Regular.woff') format('woff');
+    src: url('../fonts/RammettoOne-Regular.woff2') format('woff2'),
+        url('../fonts/RammettoOne-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('fonts/Ubuntu-Bold.woff2') format('woff2'),
-        url('fonts/Ubuntu-Bold.woff') format('woff');
+    src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('fonts/Ubuntu-Regular.woff2') format('woff2'),
-        url('fonts/Ubuntu-Regular.woff') format('woff');
+    src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -35,6 +35,7 @@ body {
   font-family: 'Ubuntu', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: grid;
   justify-items: stretch;
+  text-wrap-style: balance;
 }
 
 header {
@@ -50,7 +51,8 @@ header {
   background-color: #FFEDB8;
   font-family: 'Rametto', Arial, Helvetica, sans-serif;
   font-weight: 900;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
+  z-index: 1
 }
 
 header > p {
@@ -70,41 +72,6 @@ header > nav {
     background-color: transparent;
     border-radius: 8px
   }
-}
-
-#content {
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: 2fr 3fr;
-  padding: 2rem;
-  max-width: 1000px;
-  justify-self: center
-}
-
-#content p {
-  font-size: 1.2rem;
-}
-
-#content .image-column > div:first-child {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 1rem;
-}
-
-#content .image-column > div:last-child {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 1rem;
-}
-
-#content .image-column img {
-  box-shadow: 0 0 50px 50px white inset;
-}
-
-#content .image-column {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 footer {

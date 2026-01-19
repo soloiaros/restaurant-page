@@ -1,12 +1,12 @@
-import Image1 from './images/mug-2.svg'
-import Image2 from './images/mug-3.svg'
+import Image1 from './static/images/mug-3.svg'
+import Image2 from './static/images/mug-2.svg'
 
 export default function() {
   const content = document.querySelector('#content');
 
-  const createGenericParagraph = () => {
+  const createParagraph = (text) => {
     let genericParaElement = document.createElement('p');
-    genericParaElement.textContent = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde tempora enim culpa quisquam commodi animi? Mollitia perferendis id maxime voluptate, nisi perspiciatis eum veniam autem pariatur enim ipsam quos saepe!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde tempora enim culpa quisquam commodi animi? ';
+    genericParaElement.textContent = text;
     return genericParaElement;
   }
 
@@ -15,10 +15,10 @@ export default function() {
   textColumn.classList.add('text-column');
   imageColumn.classList.add('image-column');
 
-  const textColumnHeader = document.createElement('h1')
+  const textColumnHeader = document.createElement('h1');
   textColumnHeader.textContent = 'Making your mornings unforgettable';
   textColumn.appendChild(textColumnHeader);
-  textColumn.appendChild(createGenericParagraph());
+  textColumn.appendChild(createParagraph('Mar-a-Mug’o is a tongue-in-cheek coffee shop serving very important pours in a setting of excessive luxury and zero self-awareness. Expect over-the-top gold accents, dramatic branding, and coffee that’s “the best, maybe ever”—whether it is or not. Come for the espresso, stay for the satire, and leave feeling tremendously caffeinated. ☕😌'));
 
   imageContainer1.classList.add('image-container');
   imageContainer2.classList.add('image-container');
@@ -27,8 +27,8 @@ export default function() {
   imageElement1.src = Image1;
   imageElement2.src = Image2;
   imageContainer1.appendChild(imageElement1);
-  imageContainer1.appendChild(createGenericParagraph());
-  imageContainer2.appendChild(createGenericParagraph());
+  imageContainer1.appendChild(createParagraph('Welcome to Mar-a-Mug’o, where coffee is brewed with tremendous confidence and absolutely no humility. Every cup is handcrafted, boldly branded, and served as if it just closed the biggest deal you’ve ever heard of. Gold-plated vibes optional, strong opinions included.'));
+  imageContainer2.appendChild(createParagraph('From executive-level espresso shots to drip coffee that “people are saying” is the finest around, Mar-a-Mug’o delivers caffeine with unmatched bravado. Sip responsibly, pose dramatically, and remember: at Mar-a-Mug’o, it’s not just coffee—it’s a lifestyle.'));
   imageContainer2.appendChild(imageElement2);
 
   imageColumn.appendChild(imageContainer1);
@@ -36,21 +36,4 @@ export default function() {
 
   content.appendChild(textColumn);
   content.appendChild(imageColumn);
-
-  const footer = document.querySelector('footer')
-  const [footerLinksList, footerText, footerYear] = [document.createElement('ul'), document.createElement('h4'), document.createElement('p')];
-  const footerLinks = [
-    document.createElement('li'),
-    document.createElement('li'),
-    document.createElement('li'),
-  ];
-  for (let i = 0; i < 3; i++) footerLinks[i].appendChild(document.createElement('a'));
-  for (let i = 0; i < 3; i++) footerLinks[i].querySelector('a').textContent = ['Contacts', 'Gallery', 'Socials'][i];
-  for (let footerLink of footerLinks) footerLinksList.appendChild(footerLink);
-  footerText.textContent = "Mar-a-Mug'o";
-  footerYear.textContent = '@2026';
-
-  footer.appendChild(footerLinksList);
-  footer.appendChild(footerText);
-  footer.appendChild(footerYear);
 }

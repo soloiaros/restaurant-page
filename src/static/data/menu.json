@@ -1,0 +1,66 @@
+{
+    "coffee": [
+      {
+        "name": "The Big Pour",
+        "description": "A bold house drip. Simple. Strong. Tremendous."
+      },
+      {
+        "name": "Executive Espresso",
+        "description": "A single shot with total authority."
+      },
+      {
+        "name": "Double Down Americano",
+        "description": "Two shots, lots of hot water, zero apologies."
+      },
+      {
+        "name": "Golden Latte",
+        "description": "Classic latte with a luxurious amount of foam."
+      },
+      {
+        "name": "Fake News Decaf",
+        "description": "Tastes like coffee, but people are suspicious."
+      }
+    ],
+    "iced_and_extra": [
+      {
+        "name": "Cold Brew Deal",
+        "description": "Smooth, cold, and negotiated overnight."
+      },
+      {
+        "name": "Iced Latte, Very Legal",
+        "description": "Exactly what it says it is."
+      },
+      {
+        "name": "Covfefe",
+        "description": "We’re not explaining it. Just order it."
+      }
+    ],
+    "snacks": [
+      {
+        "name": "Presidential Croissant",
+        "description": "Flaky. Powerful. Gone too soon."
+      },
+      {
+        "name": "Muffin Majority",
+        "description": "Blueberry or chocolate chip—wins every time."
+      },
+      {
+        "name": "Donut of Truth",
+        "description": "Glazed. Circular. No comment."
+      }
+    ],
+    "upgrades": [
+      {
+        "name": "Oat or Almond Milk",
+        "description": "Elite Option"
+      },
+      {
+        "name": "Extra Shot",
+        "description": "Huge Energy"
+      },
+      {
+        "name": "Whipped Cream",
+        "description": "Over the Top"
+      }
+    ]
+}

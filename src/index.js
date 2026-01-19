@@ -1,4 +1,5 @@
 import createLayout from './page-load.js'
-import './styles.css';
+import './static/styles/base.css';
+import './static/styles/homepage.css';
 
 createLayout();
