@@ -26,6 +26,14 @@ module.exports = {
       {
         test: /\.(png|jpg|jpeg|svg|ico)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
+        test: /\.(woff|woff2|ttf)$/i,
+        type: 'asset/resource',
       }
     ]
   }
