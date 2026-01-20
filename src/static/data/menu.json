@@ -1,5 +1,5 @@
 {
-    "coffee": [
+    "Coffee": [
       {
         "name": "The Big Pour",
         "description": "A bold house drip. Simple. Strong. Tremendous."
@@ -21,7 +21,7 @@
         "description": "Tastes like coffee, but people are suspicious."
       }
     ],
-    "iced_and_extra": [
+    "Iced & Extra": [
       {
         "name": "Cold Brew Deal",
         "description": "Smooth, cold, and negotiated overnight."
@@ -35,7 +35,7 @@
         "description": "We’re not explaining it. Just order it."
       }
     ],
-    "snacks": [
+    "Snacks": [
       {
         "name": "Presidential Croissant",
         "description": "Flaky. Powerful. Gone too soon."
@@ -49,7 +49,7 @@
         "description": "Glazed. Circular. No comment."
       }
     ],
-    "upgrades": [
+    "Upgrades": [
       {
         "name": "Oat or Almond Milk",
         "description": "Elite Option"

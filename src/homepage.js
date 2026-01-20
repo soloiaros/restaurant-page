@@ -1,8 +1,12 @@
 import Image1 from './static/images/mug-3.svg'
 import Image2 from './static/images/mug-2.svg'
+import './static/styles/homepage.css';
 
 export default function() {
   const content = document.querySelector('#content');
+  content.innerText = '';
+  content.classList = '';
+  content.classList.add('homepage');
 
   const createParagraph = (text) => {
     let genericParaElement = document.createElement('p');

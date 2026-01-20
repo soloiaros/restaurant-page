@@ -1,56 +1,56 @@
-#content {
+#content.homepage {
   display: grid;
   gap: 5rem;
   padding: 2rem;
   max-width: 1000px;
-  justify-self: center
+  justify-self: center;
 }
 
-#content p {
+#content.homepage p {
   font-size: 1.2rem;
 }
 
-#content .text-column {
+#content.homepage .text-column {
   text-align: center;
   position: relative;
 }
 
-#content .text-column::after {
+#content.homepage .text-column::after {
   content: '';
   width: 100vw;
   height: 1rem;
   background-color: #473600cb;
   position: absolute;
   left: calc((-100vw + 100%) / 2);
-  bottom: -2rem;
+  bottom: -3rem;
 }
 
-#content .image-column > div:first-child {
+#content.homepage .image-column > div:first-child {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
   justify-self: start;
 }
 
-#content .image-column > div:last-child {
+#content.homepage .image-column > div:last-child {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
   justify-self: end;
 }
 
-#content .image-column img {
+#content.homepage .image-column img {
   box-shadow: 0 0 50px 50px white inset;
 }
 
-#content .image-column {
+#content.homepage .image-column {
   display: grid;
   gap: 2rem;
   width: 100%;
 }
 
 .image-container {
-  border: 1rem solid rgb(213, 139, 0, .5);
+  border: 1rem solid var(--container-border-color);
   border-radius: 2rem;
   padding: 1.5rem;
   width: 80%;

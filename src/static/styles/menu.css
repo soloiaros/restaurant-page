@@ -1,0 +1,28 @@
+#content.menu {
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+}
+
+#content.menu table {
+  background-color: rgb(177, 134, 59);
+  border-collapse: collapse;
+  color: var(--body-background);
+  font-size: 1.2rem;
+}
+
+#content.menu table > * {
+  border: 2px solid var(--dark-text-color);
+}
+
+#content.menu table td {
+  padding: 1rem 1.5rem;
+}
+
+#content.menu table th {
+  font-size: 1.5rem;
+}
+
+#content.menu table tr td {
+  border: 1px solid var(--dark-text-color);
+}

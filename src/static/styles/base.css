@@ -26,16 +26,28 @@
 }
 
 body {
+  --dark-text-color: #473600;
+  --body-background: #FFF9E6;
+  --header-background: #FFEDB8;
+  --button-border-color: rgb(213, 139, 0);
+  --footer-background-color: #1A1300;
+  --footer-text-color: #ffffff;
+  --container-border-color: rgb(213, 139, 0, .5);
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   line-height: 1.25;
-  background-color: #FFF9E6;
-  color: #473600;
+  background-color: var(--body-background);
   font-family: 'Ubuntu', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: grid;
+  color: var(--dark-text-color);
   justify-items: stretch;
   text-wrap-style: balance;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rametto', Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -46,17 +58,30 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
   padding: 0 2rem;
-  background-color: #FFEDB8;
+  background-color: var(--header-background);
   font-family: 'Rametto', Arial, Helvetica, sans-serif;
   font-weight: 900;
   border-radius: 0 0 10px 10px;
-  z-index: 1
+  z-index: 1;
 }
 
 header > p {
   font-size: 2rem;
+  position: relative;
+  margin-left: 4.5rem;
+}
+
+header > p::after {
+  content: '';
+  background-image: url('../images/logo-cup.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  left: -5.5rem;
+  top: -0.5rem;
 }
 
 header > nav {
@@ -68,27 +93,59 @@ header > nav {
     color: inherit;
     font-size: 1.2rem;
     font-family: inherit;
-    border: 4px solid rgb(213, 139, 0);
+    border: 4px solid var(--button-border-color);
     background-color: transparent;
     border-radius: 8px
   }
+}
+
+header button {
+  transition: 200ms all ease-in-out;
+}
+
+header button:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+header button:active {
+  transform: scale(1.05);
 }
 
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  background-color: #1A1300;
-  color: #fff;
-  width: 100vw;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+  padding: 4rem 0;
   ul {
     list-style: none;
+    justify-self: start;
   }
   a {
-    color: #fff;
+    color: var(--footer-text-color);
   }
   a:hover {
     text-decoration: underline;
-    color: #FFEDB8;
+    color: var(--header-background);
   }
+}
+
+footer p {
+  position: relative;
+}
+
+footer p::after {
+  content: '';
+  background-image: url('../images/logo-cup.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  right: -8rem;
+  top: -1.5rem;
 }
